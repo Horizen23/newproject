@@ -1,0 +1,145 @@
+@media only screen and (min-width: 800px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Lato', sans-serif;
+        outline: none;
+
+    }
+
+    body{
+        flex-direction: row;
+    }
+
+    /*            navbar               */
+    nav{
+        width: 320px;
+        }
+        
+    .State_mark,.lgadmin,.Logo{
+        display: flex;
+    }
+    .lgadmin{
+        font-size: 25.3796px;
+        color: #4C4C66;
+    }
+    .hva {
+        justify-content: flex-start;
+    }
+    .navlist{
+        flex-direction: column;
+        position: inherit;
+        background: none;
+    }
+    .nonemobie{
+        display: flex
+    }
+    .logohead{
+        justify-content: center;
+        height: 150px;
+        background: none;
+    }
+    #listmenu{
+        display:  none;
+    }
+    .Header{
+
+        padding: 50px 70px;
+    }
+    .Notif{
+        background: linear-gradient(136.67deg, #FF409A 8.34%, #C438EF 95.26%);
+        box-shadow: 0px 4.54988px 30.9392px rgba(186, 19, 88, 0.42);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .brushowform{
+        top: 0;
+        position: absolute;
+        background: #2525258c;
+        box-shadow: 0px 4px 35px rgb(0 0 0 / 17%);
+        width: 100%;
+        height: 100vh;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+    }
+    .form >div>h1 {
+        font-size: 30px;
+    }
+    
+    .form{
+        border-radius: 2%;
+        min-width: 780px;
+        width: 70%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        background: #FFFFFF;
+        box-shadow: 0px 15.6457px 31.2913px rgba(35, 23, 5, 0.26);
+    
+    }
+    
+    
+    .hform{
+          left: 84px;
+        top: 121px;
+        border-bottom: 1px solid #C4C4C4;
+        width: 90%;
+    }
+    .conten_input{
+        width: fit-content;
+        margin: 70px auto;
+        flex-wrap: nowrap;
+    }
+    .cform:first-child {
+        margin-right: 45px;
+    }
+    
+    
+  
+}
+
+/*
+
+.d_concludes>p, .hgbar>p{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+    color: #4C4C66;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+
+.conclude>p{
+    color: #ffffff;
+    opacity: 0.8;
+    font-size: 18px
+}
+
+.ccl>p{
+    font-size: 18.9197px;
+    line-height: 10px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    color: #4C4C66;
+    opacity: 0.3;
+
+}
+*/
+

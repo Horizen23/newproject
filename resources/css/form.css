@@ -1,0 +1,143 @@
+
+
+.form{
+ 
+    height: 842px;
+
+}
+.form >div>h1{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 43px;
+    text-transform: uppercase;
+    color: rgba(76, 76, 102, 0.8);
+
+}
+.hform{
+    height: 121px;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    justify-content: space-between;
+
+}
+.input_apd>select{
+    padding: 0 10px;
+    border: none;
+    border-bottom: 2.435px solid #D9D8EB;
+    /* width: 397px; */
+    width: var(--widthinputs);
+    height: 39.5px;
+}
+
+
+.input_apd>select.fucus{
+    padding: 0 10px;
+    border: 2.435px solid rgb(168 163 243);
+    border-radius: 5.74px;
+    width: var(--widthinputs);
+}
+.hform>button{
+    font-size: 18px;
+    border: none;
+    background: linear-gradient(40deg,#1da1f2,#7873f5);
+    color: #ffffff;
+    border-radius: 12px;
+    height: 37px;
+    text-align: center;
+    padding: 0 20px;
+    line-height: 37px;
+    font-size: 16px;
+}
+
+.cform{
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.input_radio{
+    height: 39.5px;
+    display: flex;
+    align-items: center;
+}
+.input_radio>input{
+    margin-right: 10px;
+}
+.input_radio>label{
+    margin-right: 40px;
+}
+
+.input_addproduct>h1{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(76, 76, 102, 0.8);
+    
+}
+.errorinput{
+    width: fit-content;
+    padding: 0 11px;
+    display: flex;
+    padding: 0 11px;
+    background: #ffffff;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12.175px;
+    line-height: 9px;
+    color: #D9D8EB;
+}
+
+.countid{
+    position: absolute;
+    transform: translate(0%, -20%);
+    left: 20px;
+}
+.input_apd>input{
+    padding: 18px 10px;
+    border: none;
+    border-bottom: 2.435px solid #D9D8EB;
+    width: var(--widthinput);
+    height: 3.56px;
+}
+.input_apd>input.fucus{
+    border: 2.435px solid rgb(168 163 243);
+    border-radius: 5.74px;
+    width: var(--widthinput);
+    height: 3.56px;
+}
+
+
+
+.input_apd{
+    width: fit-content;
+    display: flex;
+    position: relative;
+    height: fit-content;
+}
+
+.input_addproduct{
+    height: 90px;
+    grid-gap: 20px;
+    grid-template-columns: 75px var(--widthinputs);
+    display: grid;
+
+}
+
+
+.conten_input{
+    width: fit-content;
+    margin: 70px auto;
+    flex-wrap: wrap;
+}
+
+
+
+
