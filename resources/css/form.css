@@ -1,8 +1,8 @@
 
-
 .form{
- 
-    height: 842px;
+    max-width: 1200px;
+    max-height: 842px;
+    height: 90%;
 
 }
 .form >div>h1{
@@ -124,7 +124,7 @@
 }
 
 .input_addproduct{
-    height: 90px;
+    margin-bottom: 40px;
     grid-gap: 20px;
     grid-template-columns: 75px var(--widthinputs);
     display: grid;

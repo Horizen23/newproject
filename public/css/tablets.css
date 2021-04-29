@@ -1,31 +1,23 @@
 @media only screen and (min-width: 800px) {
-    *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: 'Lato', sans-serif;
-        outline: none;
 
-    }
-
+    
     body{
         flex-direction: row;
     }
 
     /*            navbar               */
-    nav{
-        width: 320px;
-        }
-        
-    .State_mark,.lgadmin,.Logo{
-        display: flex;
+  
+    .navtext {
+        margin-left: 0;
     }
+
     .lgadmin{
         font-size: 25.3796px;
         color: #4C4C66;
     }
     .hva {
-        justify-content: flex-start;
+        margin-bottom: 9px;
+        justify-content: center;
     }
     .navlist{
         flex-direction: column;
@@ -80,6 +72,7 @@
     }
     
     .form{
+        overflow: hidden;
         border-radius: 2%;
         min-width: 780px;
         width: 70%;
@@ -100,46 +93,48 @@
         width: 90%;
     }
     .conten_input{
+        margin: 70px auto 0 auto;
         width: fit-content;
-        margin: 70px auto;
         flex-wrap: nowrap;
     }
     .cform:first-child {
         margin-right: 45px;
     }
+
+    nav {
+        width: 95px;
+    }
+   
+    .fa, .far, .fas {
+        font-size: 18px;
+    }
+    .navtext {
+        font-size: 10px;
+    }
+    .nav_rs {
+        flex-direction: column;
+        width: 75px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+    }
+    /*
+    form
+    */
+    .p_auto{
+        white-space: nowrap;
+        overflow: auto;
+        height: 75%;
+
+    }
+    .cidright{
     
+        position: absolute;
+        margin: auto;
+        justify-content: flex-end;
+        display: flex;
+        right: 30px;
+        bottom: 0;
+    }
     
-  
 }
-
-/*
-
-.d_concludes>p, .hgbar>p{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 33px;
-    color: #4C4C66;
-    mix-blend-mode: normal;
-    opacity: 0.7;
-    margin-bottom: 10px;
-}
-
-
-.conclude>p{
-    color: #ffffff;
-    opacity: 0.8;
-    font-size: 18px
-}
-
-.ccl>p{
-    font-size: 18.9197px;
-    line-height: 10px;
-    color: #FFFFFF;
-    opacity: 0.5;
-    color: #4C4C66;
-    opacity: 0.3;
-
-}
-*/
-

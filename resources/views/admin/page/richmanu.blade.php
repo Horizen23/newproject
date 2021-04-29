@@ -30,10 +30,10 @@
                     <th>เวลาเพิ่ม</th>
                     <th>จำนวน</th>
                     <th class="th_tr_r">ราคา</th>
-                    <th style="width: 320px;"></th>
+                    <th>contro</th>
                 </tr>
             </thead>
-      
+       
             <tbody>
                             <tr class="tbbodylist">
                     <td class="headcheckbox"> <input type="checkbox" class="checkbox" value="#"><span>&nbsp;</span></td>
@@ -48,9 +48,9 @@
                     <td class="th_tr_r">94  ฿</td>
                     <td>
                         <div class="contro">
-                            <p class="a  "> show</p>
-                            <p class="b ">delert</p>
-                            <p class="a "> edit</p>
+                            <p class="show"> show</p>
+                            <p class="delert">delert</p>
+                            <p class="edit"> edit</p>
                         </div>
       
                     </td>
@@ -67,9 +67,9 @@
                     <td class="th_tr_r">94  ฿</td>
                     <td>
                         <div class="contro">
-                            <p class="a  "> show</p>
-                            <p class="b ">delert</p>
-                            <p class="a "> edit</p>
+                            <p class="show"> show</p>
+                            <p class="delert">delert</p>
+                            <p class="edit"> edit</p>
                         </div>
       
                     </td>
@@ -86,9 +86,9 @@
                     <td class="th_tr_r">94  ฿</td>
                     <td>
                         <div class="contro">
-                            <p class="a  "> show</p>
-                            <p class="b ">delert</p>
-                            <p class="a "> edit</p>
+                            <p class="show"> show</p>
+                            <p class="delert">delert</p>
+                            <p class="edit"> edit</p>
                         </div>
       
                     </td>
@@ -106,9 +106,9 @@
                     <td class="th_tr_r">94  ฿</td>
                     <td>
                         <div class="contro">
-                            <p class="a  "> show</p>
-                            <p class="b ">delert</p>
-                            <p class="a "> edit</p>
+                            <p class="show"> show</p>
+                            <p class="delert">delert</p>
+                            <p class="edit"> edit</p>
                         </div>
       
                     </td>
@@ -126,9 +126,9 @@
                     <td class="th_tr_r">94  ฿</td>
                     <td>
                         <div class="contro">
-                            <p class="a  "> show</p>
-                            <p class="b ">delert</p>
-                            <p class="a "> edit</p>
+                            <p class="show"> show</p>
+                            <p class="delert">delert</p>
+                            <p class="edit"> edit</p>
                         </div>
       
                     </td>
@@ -146,9 +146,9 @@
                     <td class="th_tr_r">94  ฿</td>
                     <td>
                         <div class="contro">
-                            <p class="a  "> show</p>
-                            <p class="b ">delert</p>
-                            <p class="a "> edit</p>
+                            <p class="show"> show</p>
+                            <p class="delert">delert</p>
+                            <p class="edit"> edit</p>
                         </div>
       
                     </td>
@@ -166,9 +166,9 @@
                     <td class="th_tr_r">94  ฿</td>
                     <td>
                         <div class="contro">
-                            <p class="a  "> show</p>
-                            <p class="b ">delert</p>
-                            <p class="a "> edit</p>
+                            <p class="show"> show</p>
+                            <p class="delert">delert</p>
+                            <p class="edit"> edit</p>
                         </div>
       
                     </td>
@@ -186,9 +186,9 @@
                     <td class="th_tr_r">94  ฿</td>
                     <td>
                         <div class="contro">
-                            <p class="a  "> show</p>
-                            <p class="b ">delert</p>
-                            <p class="a "> edit</p>
+                            <p class="show"> show</p>
+                            <p class="delert">delert</p>
+                            <p class="edit"> edit</p>
                         </div>
       
                     </td>
@@ -206,9 +206,9 @@
                     <td class="th_tr_r">94  ฿</td>
                     <td>
                         <div class="contro">
-                            <p class="a  "> show</p>
-                            <p class="b ">delert</p>
-                            <p class="a "> edit</p>
+                            <p class="show"> show</p>
+                            <p class="delert">delert</p>
+                            <p class="edit"> edit</p>
                         </div>
       
                     </td>
@@ -226,9 +226,9 @@
                     <td class="th_tr_r">94  ฿</td>
                     <td>
                         <div class="contro">
-                            <p class="a  "> show</p>
-                            <p class="b ">delert</p>
-                            <p class="a "> edit</p>
+                            <p class="show"> show</p>
+                            <p class="delert">delert</p>
+                            <p class="edit"> edit</p>
                         </div>
       
                     </td>
@@ -246,9 +246,9 @@
                     <td class="th_tr_r">94  ฿</td>
                     <td>
                         <div class="contro">
-                            <p class="a  "> show</p>
-                            <p class="b ">delert</p>
-                            <p class="a "> edit</p>
+                            <p class="show"> show</p>
+                            <p class="delert">delert</p>
+                            <p class="edit"> edit</p>
                         </div>
       
                     </td>

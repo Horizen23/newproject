@@ -2,6 +2,9 @@
 :root {
     --widthinput:230px ;
     --widthinputs: 252px;
+    --bg_ct: #ECEFFC; 
+    --cl_f:  #646B8C; 
+   
   }
 *{
     padding: 0;
@@ -32,6 +35,9 @@ body{
 }
 
 /*            navbar               */
+.nav_rs{
+    display: flex;
+}
 nav{
     width: 100%;
     height: 50px;
@@ -51,6 +57,9 @@ nav{
         cursor: pointer;
         font-size: 19px;
         color: #ffffff;
+    }
+    .fa, .fas, .fab, .far {
+        font-weight: 900;
     }
     .Logo{
     display: none;
@@ -148,9 +157,8 @@ nav{
         line-height: 16px;
         letter-spacing: 0.454988px;
         color: #53B9EA;
-        background: linear-gradient(
-            270.12deg
-            , #d9f2ff 3.74%, rgb(146 176 191 / 0%) 46.62%, rgb(110 215 255 / 11%) 58.32%);
+
+        background: linear-gradient(129.12deg, #d9f2ff -27.26%, rgb(146 176 191 / 0%) 43.62%, rgb(110 215 255 / 25%) 134.32%);
     }
     .hva:hover{
     
@@ -866,6 +874,31 @@ td, th {
 
 th.headcheckbox {
     text-align: center;
+}
+
+.contro>p{
+    width: fit-content;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 2px 5px;
+    line-height: 17px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 500;
+}
+.contro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.show,.edit{
+    background-color: var(--bg_ct);
+    color: var(--cl_f)
+}
+.delert{
+    background: #f75d59;
+    color:  var(--bg_ct);
 }
 
 .headcheckbox {
