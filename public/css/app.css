@@ -736,6 +736,9 @@ test */
 .flex{
     display: flex;
 }
+.gap{
+   gap: 10px
+}
 
 .d_concludes>p, .hgbar>p{
     font-style: normal;
@@ -888,6 +891,12 @@ th.headcheckbox {
     font-size: 12px;
     font-weight: 500;
 }
+.htexttb{
+    font-weight: 400;
+    font-size: 21.2993px;
+    color: #4C4C66;
+    opacity: 0.9;
+}
 .contro {
     display: flex;
     flex-wrap: wrap;
@@ -933,8 +942,12 @@ input[type="checkbox"]:checked + span {
 }
 
 .filter{
-    padding: 14px;
-    height: 36px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    cursor: pointer;
+    padding: 6px;
+    height: 27px;
     font-size: 12px;
     display: flex;
     align-items: center;

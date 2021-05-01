@@ -19,10 +19,13 @@ Route::get('/dashboard', function () {
 });
 
 Route::get('/', function () {
-  $a = Login::with('gettoei')->get();
+    $test = Login::joinuser();
+    Debugbar::info(  $test);
   
-    Debugbar::info(  $a);
-    return view('admin/page/richmanu');
+    return view('admin/page/richmanu',[
+            "eieis"=>$test ,
+            "nametable"=>"ข้อมูลยูเซอร์"
+          ]);
 });
 Route::get('/test', function () {
     return view('admin/page/test');
@@ -58,4 +61,6 @@ php artisan help make:controller
 
     php artisan tinker ทดสอบ  model
 
+drop ตาราง ทั้งหมด
+  php artisan db:wipe
 */

@@ -14,8 +14,7 @@ class AddToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->unsignedBigInteger('login_id');
-            $table->foreign('login_id')->references('id')->on('logins');
+            $table->foreignId('login_id')->nullable()->constrained('logins');
         });
         DB::table('logins')->insert([
             ['username' => 'froy123', 'password' => 0, 'roles' => 'admin'],
