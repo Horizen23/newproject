@@ -26,6 +26,7 @@
     cmd-> php artisan make:migration create_nametable_table  
 
 ### หากต้องการเพิ่ม file หรือ colum  row ตารางเพิ่มที่หลัง
+เลือกใช้อันไหนก็ได้
     cmd-> php artisan make:migration add_name_to_nametable_table
  
     cmd-> php artisan make:migration add_name_to_nametable_update --table="nametable"
