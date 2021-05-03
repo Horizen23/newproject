@@ -31,7 +31,7 @@
     cmd-> php artisan make:migration add_name_to_nametable_update --table="nametable"
 
 
-### หากต้องการลบข้อมูลในตารางทั้งหมด- เพื่อเทสหรือทดสอบ
+### **[หากต้องการลบข้อมูลในตารางทั้งหมด- เพื่อเทสหรือทดสอบ](https://vehikl.codm/)**
     cmd-> php artisan migrate:fresh
     cmd-> php artisan migrate:reset
 
