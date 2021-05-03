@@ -36,7 +36,7 @@
     cmd-> php artisan migrate:reset
 
 ### สร้าง คอลัมต่อจากอันไหน
-  ->after-(namecolum)
+    ->after-(namecolum)
 ### migration ทั้งหมดที่ยังไม่เคย
     php artisan migration
 
