@@ -1,31 +1,65 @@
-<p align="center" style="borhp der:20px solid;"><a href="https://laravel.com" target="_blank"><img src="https://avatars.githubusercontent.com/u/64632531?s=400&u=6598846a0e117d6f1c6363a2e80b59b00a12cea5&v=4" width="900"></a></p>
+<p align="center" style="borhp der:20px solid;"><a href="https://laravel.com" target="_blank"><img src="https://avatars.githubusercontent.com/u/64632531?s=400&u=6598846a0e117d6f1c6363a2e80b59b00a12cea5&v=4" width="90"></a></p>
 </p>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+สุดยอด 
+php artisan list
+php artisan help make:controller
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+สร้าง model controller migration
+    php artisan make:model name -mc
 
-## Laravel Sponsors
+    php artisan tinker ทดสอบ  model
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-### Premium Partners
+
+
+## Migration สร้าง database สร้างแบบ Migration เพราะ ว่าจะได้ทำงานแก้ไขง่ายกับเพื่อน
+### โดยสร้าง Migration หริอตาราง ผ่าน 
+  
+- cmd-> php artisan make:migration create_nametable_table
+
+### โดยสร้าง Migration หริอตาราง ผ่าน 
+-  cmd-> php artisan make:migration create_nametable_table  
+
+### หากต้องการเพิ่ม file หรือ colum  row ตารางเพิ่มที่หลัง
+- cmd-> php artisan make:migration add_name_to_nametable_table
+ or
+-  cmd-> php artisan make:migration add_name_to_nametable_update --table="nametable"
+
+
+### หากต้องการลบข้อมูลในตารางทั้งหมด- เพื่อเทสหรือทดสอบ
+-   cmd-> php artisan migrate:fresh
+-   cmd-> php artisan migrate:reset
+
+### สร้าง คอลัมต่อจากอันไหน
+-  ->after-(namecolum)
+### migration ทั้งหมดที่ยังไม่เคย
+-  php artisan migration
+
+### drop ตาราง ทั้งหมด
+-  php artisan db:wipe
+
+### seeder การทดสอบตาราง
+####  เริ่มสร้าง seeder เพิ่มทดสอบเพิ่มข้อมูลในตาราง
+--   php artisan make:seeder Createlogin
+####  รัน  seeder
+--   php artisan db:seed --class=Createlogin
+
+## แจ้งเตือนจาก php flash massage
+### blade php 
+    @if(Session::has('message'))
+    <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+    @endif
+### laravel php 
+  Session::flash('message', 'This is a message!'); 
+  Session::flash('alert-class', 'alert-danger'); 
+        or
+  ->with(message,'This is a message!')
 
 - **[Vehikl](https://vehikl.com/)**
 - **[Tighten Co.](https://tighten.co)**
@@ -38,19 +72,3 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 - **[DevSquad](https://devsquad.com)**
 - **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
 - **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
