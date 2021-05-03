@@ -55,11 +55,13 @@ nav{
     }
     #listmenu{
         cursor: pointer;
-        font-size: 19px;
-        color: #ffffff;
+        width: 20px;
     }
-    .fa, .fas, .fab, .far {
-        font-weight: 900;
+    #listmenu>svg>path{
+        fill: #ffffff;
+    }
+    .iconnav>svg{
+        width: 18px;
     }
     .Logo{
     display: none;

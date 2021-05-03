@@ -23,6 +23,7 @@
         flex-direction: column;
         position: inherit;
         background: none;
+        width: auto;
     }
     .nonemobie{
         display: flex
@@ -102,6 +103,7 @@
     }
 
     nav {
+        height: 100vh;
         width: 95px;
     }
    

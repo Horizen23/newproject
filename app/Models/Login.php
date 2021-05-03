@@ -10,6 +10,7 @@ class Login extends Model
     // protected $visible = ['id','username','password','roles','user','รหัสเข้าใช้','พาสเวิด','บทบาท'];
 
     use HasFactory;
+    public $timestamps = false;
     protected $maps =[
         'username' => 'customer_id',
         'password' => 'customer_name',

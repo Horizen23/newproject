@@ -9,7 +9,7 @@ class User extends Model
 {
     use HasFactory;
 
-
+    public $timestamps = false;
     public function login()
     {
         return $this->belongsTo(User::class);

@@ -16,7 +16,23 @@ use App\Models\Login;
 Route::get('/dashboard', function () {
     
     return view('admin/page/dashboard');
+})->middleware('Admin');
+Route::get('/login', function () {
+    
+    return view('login');
 });
+Route::POST('/lg', function () {
+     echo "สู้ๆ";
+})->middleware('Checklogin');
+
+Route::get('/logut', function () {
+  session()->forget('user');
+  return  redirect('/login');
+});
+Route::get('/user', function () {
+  return view('user/index');
+});
+
 
 Route::get('/', function () {
     $test = Login::joinuser();
@@ -26,10 +42,10 @@ Route::get('/', function () {
             "eieis"=>$test ,
             "nametable"=>"ข้อมูลยูเซอร์"
           ]);
-});
+})->middleware('Admin');
 Route::get('/test', function () {
     return view('admin/page/test');
-});
+})->middleware('Admin');
 
 
 /* Migration สร้าง database สร้างแบบ Migration เพราะ ว่าจะได้ทำงานแก้ไขง่ายกับเพื่อน
@@ -63,4 +79,22 @@ php artisan help make:controller
 
 drop ตาราง ทั้งหมด
   php artisan db:wipe
+
+รันโค้ต สร้าง db ต่าง
+  เริ่มสร้าง seeder
+   php artisan make:seeder Createlogin
+  รัน  seeder
+   php artisan db:seed --class=Createlogin
+
+แจ้งเตือนจาก php flash massage
+blade php 
+    @if(Session::has('message'))
+    <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+    @endif
+laravel php 
+  Session::flash('message', 'This is a message!'); 
+  Session::flash('alert-class', 'alert-danger'); 
+        or
+  ->with(message,'This is a message!')
+  
 */
