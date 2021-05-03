@@ -56,12 +56,12 @@ php artisan help make:controller
     <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
     @endif
 ### laravel php 
-  Session::flash('message', 'This is a message!'); 
-  Session::flash('alert-class', 'alert-danger'); 
-        or
-  ->with(message,'This is a message!')
+    Session::flash('message', 'This is a message!'); 
+    Session::flash('alert-class', 'alert-danger'); 
+            or
+    ->with(message,'This is a message!')
 
-- **[Vehikl](https://vehikl.com/)**
+- **[Vehikl](https://vehikl.codm/)**
 - **[Tighten Co.](https://tighten.co)**
 - **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
 - **[64 Robots](https://64robots.com)**
