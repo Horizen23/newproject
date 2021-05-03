@@ -6,17 +6,16 @@
 
 
 
-สุดยอด 
-php artisan list
-php artisan help make:controller
+##  เทคนิคการใช้เสริม
+### ดูคำสั่ง ใน laravel
+    php artisan list
+    php artisan make:controller
+    php artisan make: -h
+    php artisan make: help
 
-สร้าง model controller migration
+### สร้าง model controller migration
     php artisan make:model name -mc
-
     php artisan tinker ทดสอบ  model
-
-
-
 
 ## Migration สร้าง database สร้างแบบ Migration เพราะ ว่าจะได้ทำงานแก้ไขง่ายกับเพื่อน
 ### โดยสร้าง Migration หริอตาราง ผ่าน 
