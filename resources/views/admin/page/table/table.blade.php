@@ -14,16 +14,26 @@
         <table>
             <thead>
                 <tr class="tbhead">
-                    <th class="headcheckbox"><input type="checkbox" class="checkbox" value="#"><span>&nbsp;</span></th>
+                    <th class="headcheckbox checkboxdiv"><input type="checkbox" class="checkbox" value="#"><span>&nbsp;</span></th>
                     @foreach ($eieis[0] as $key=>$eiei)
                         <th>{{$key}}</th>
                     @endforeach
-                    <th>
+                    <th class="relative">
                        <div class="filter">
                             <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14.25 12L23.4318 4V0H0.477272V4L9.65909 12V20L14.25 16V12Z" fill="#8B83BA"></path>
                             </svg>
-                            <p>กรอง</p>
+                            <p c>กรอง</p>
+                        </div>
+                        <div class="fillterlist d_none">
+                            @foreach ($eieis[0] as $key=>$eiei)
+                                <div class="fiel flex gap" data-fiel="{{$key}}">
+                                    <div class="checkboxdiv">
+                                        <input type="checkbox" class="checkbox" value="#"><span>&nbsp;</span>
+                                    </div>
+                                    <p>{{$key}}</p>
+                                </div>
+                            @endforeach
                         </div>
                     </th>
                 </tr>
@@ -33,7 +43,7 @@
         
             @foreach ($eieis as $eiei)
             <tr class="tbbodylist">
-                <td class="headcheckbox"> <input type="checkbox" class="checkbox" value="#"><span>&nbsp;</span></td>
+                <td class="headcheckbox checkboxdiv"> <input type="checkbox" class="checkbox" value="#"><span>&nbsp;</span></td>
                 @foreach ($eiei as $keey=>$arrayeiei)
                 @if ($keey=="บทบาท")
                     <td> 

@@ -912,11 +912,14 @@ th.headcheckbox {
     background: #f75d59;
     color:  var(--bg_ct);
 }
-
-.headcheckbox {
-    width: 100px;
+.checkboxdiv{
     text-align: center;
     position: relative;
+
+}
+.headcheckbox {
+    width: 100px;
+  
 }
 input[type="checkbox"] {
     display: block;
